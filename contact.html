@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
@@ -41,7 +42,7 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="about.html">about <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">about <span class="sr-only">(current)</span></a></li>
           <li><a href="projects.html">projects</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -87,11 +88,17 @@
 
     Contact Me:
     <li>
-      Call- (314)339-9076
+      Call: (314)339-9076
     </li>
     <li>
-      Email- Dornellbolins@gmail.com
+      Email: Dornellbolins@gmail.com
     </li>
+    <form name="contactForm" onsubmit="submitcontactform()">
+      <input type="email" name="email" placeholder="Email">
+      <input type="text" name="name" placeholder="Name">
+      <textarea name="Message" cols="30" rows="10"></textarea>
+      <input type="Submit" value="Submit">
+    </form>
   </h2>
 </body>
 
