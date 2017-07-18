@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>portfoliot</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
@@ -15,13 +15,7 @@
     crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-image: url("image2.jpg");
-      background-size: cover;
-      color: red
-    }
-  </style>
+
 </head>
 
 <body>
@@ -46,25 +40,13 @@
           <li><a href="about.html">about <span class="sr-only">(current)</span></a></li>
           <li><a href="projects.html">projects</a></li>
           <li><a href="contact.html">contact</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
         </ul>
         <form class="navbar-form navbar-left">
-         
-        
-            </ul>
+
+
+          </ul>
           </li>
-        </ul>
+          </ul>
       </div>
     </div>
   </nav>
@@ -82,12 +64,26 @@
     <li>
       Email: Dornellbolins@gmail.com
     </li>
-    <form name="contactForm" onsubmit="submitcontactform()">
-      <input type="email" name="email" placeholder="Email">
-      <input type="text" name="name" placeholder="Name">
-      <textarea name="Message" cols="30" rows="10"></textarea>
-      <input type="Submit" value="Submit">
+    <form id="ContactForm" name="ContactForm">
+      <div class="form-group">
+        <input class="form-control" type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="name" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="Message" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <input class="btn btn-primary btn-block" type="Submit" value="Submit">
+      </div>
     </form>
+
+    <div id="success">
+      <i class="glyphicon glyphicon-thumbs-up"></i>
+      <h2>Thanks for Contacting Me!</h2>
+      <p>Thanks for contacting me I will be back to you within 24-48 hours.</p>
+    </div>
   </h2>
 </body>
 

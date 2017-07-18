@@ -1,9 +1,17 @@
-function submitcontactform() {
-    var x = document.forms["contactForm"]["email"].value;
+$(document).ready(function () {
+
+    $('#ContactForm').on('submit', submitContactForm);
+
+});
+function submitContactForm() {
+    event.preventDefault();
+    var x = document.forms["ContactForm"]["email"].value;
     if (x == "") {
-        alert("email must be filled out");
+        alert("Email must be filled out");
         return false;
     } else {
-        alert('Thank you for submitting the form');
+        $(this).fadeOut();
+        $("#success").fadeIn();
+        //  alert('Thank you for submitting the form');
     }
 }
