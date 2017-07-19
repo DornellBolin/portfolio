@@ -1,6 +1,19 @@
+var projects =[
+    {
+        "name": "Shop project"  
+        "link": "file:///C:/Users/Dornell%20bolin/Helium-Clothing/helium.html "
+    }
+];
+
+
 $(document).ready(function () {
 
-    $('#ContactForm').on('submit', submitContactForm);
+$.each(projects, function(index, project){
+    console.log(project);
+    $('#projects').append('<a href="#"'+ project.name + '</a>' );
+});
+    
+$('#ContactForm').on('submit', submitContactForm);
 
 });
 function submitContactForm() {
