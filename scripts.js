@@ -1,7 +1,7 @@
 var projects =[
     {
         "name": "Shop project"  
-        "link": "file:///C:/Users/Dornell%20bolin/Helium-Clothing/helium.html "
+       
     }
 ];
 
