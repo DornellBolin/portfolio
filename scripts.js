@@ -4,21 +4,22 @@ var projects = [
 
     }
 ];
+
+var backgroundImages = [
+    '1.gif',
+    '2.gif',
+    '3.gif'
+];
+var i = 0;
+setInterval(function () {
+    $("body").css('background-image', 'url("portfolio' + backgroundImages[i] + '")');
+    i = i + 1;
+    if (i == 3) {
+        i = 0;
+    }
+}, 9000);
+
  
- var backgroundImages = [
-        '1.gif',
-        '2.gif',
-        '3.gif'
-     ];
-     var i = 0;
-      setInterval(function() {
-         $("body").css('background-image', 'url("portfolio/background images' + backgroundImages[i] + '")');
-         i = i + 1;
-         if (i == 3) {
-             i = 0;
-        }
-    }, 9000);
-  
 
 $(document).ready(function () {
 
@@ -44,4 +45,3 @@ function submitContactForm() {
 }
 
 
-  
